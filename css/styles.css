@@ -1,8 +1,8 @@
 
 body{
     box-sizing: border-box;
-    display: grid;
-    grid-template-rows: repeat(auto, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 nav{
@@ -42,21 +42,97 @@ a:hover
 /*main*/
 main {
     background-color: blue;
-    padding-bottom: 3em;
     padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 .container
 {   
     display: grid;
-    grid-column: auto;
+    grid-column:auto;
     justify-content: center;
-
+    max-width: 1000px;
+    position: relative;
 }
+.container:first-child
+{
+    display:grid;
+    margin: 0 auto;
+}
+.title-controls 
+{
+    background-color: aliceblue;
+    text-align: center;
+    font-weight: 300;
+}
+
+.title-controls button
+{
+    height: 2.5em;
+    width: 5em;
+    color: black;
+    background-color: rgb(183, 218, 218);
+    border-radius: 15%;
+    border: none;
+}
+
+#btn-crear:hover 
+{
+    color: aliceblue;
+    background-color: black;
+}
+
+.crear-card
+{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+}
+#form-card 
+{
+    width: ;
+}
+
+#form-card input
+{
+    width: 100%;
+}
+
+input::placeholder
+{
+    text-align: center;
+    color:brown;
+}
+/*
+Modal
+.back-drop
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #136a6d80;
+    z-index:1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.body-modal
+{
+    position:fixed;
+    width: 800px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1005;
+    
+}*/
+
+
 .container-cards
 {
+    background-color: aquamarine;
     max-height: max-content;
-    display:  grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .card
@@ -86,7 +162,6 @@ main {
 }
 .body-card .answer
 {
-    display:none;
     font-size: 1.5em;
     margin: 0;
 }
@@ -116,6 +191,15 @@ main {
 {
     background-color: rgb(23, 25, 25);
     color: white;
+}
+
+.hide
+{
+    display: none;
+}
+.show
+{
+    display: block;
 }
 /*footer*/
 

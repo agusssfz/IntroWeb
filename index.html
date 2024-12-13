@@ -21,36 +21,35 @@
     <main>
 
             <div class="container">
-                <section class="title-controls">Bienvenidos a Mente Activa</section>
-                <section class="container-cards">
-                    <div class="card">
-                        <div class="body-card">
-                            <h4 class="question">Pregunta?</h4>
-                            <h5 class="answer">respuesta</h5>
-                        </div>
-                        <div class="footer-card">
-                            <button class="show">Mostrar</button>
-                            <button class="edit">Editar</button>
-                        </div>
+                <section class="title-controls">
+                    <h1>Bienvenidos al Creador</h1>
+                    <button id="btn-crear"><h2>Crear</h2></button>
+
+                    <div id="crearCard" class="crear-card hide">
+                        <h2>Creacion de Flash Card</h2>
+
+                        <form id="form-card">
+                            <label for="fquestion">Pregunta</label>
+                            <input type="text" id="fquestion" name="fquestion" placeholder=""><br><br>
+                            <label for="fanswer">Respuesta</label>
+                            <input type="text" id="fanswer" name="fanswer" placeholder=""><br><br>
+                            <input type="submit" >
+                        </form>
+
                     </div>
-                    <div class="card">
+                </section>
+
+                <section id="containerCards" class="container-cards">
+
+                    <div class="card" data-id="">
                         <div class="body-card">
                             <h4 class="question">Pregunta?</h4>
-                            <h5 class="answer">respuesta</h5>
+                            <h5 class="answer hide">respuesta</h5>
                         </div>
                         <div class="footer-card">
-                            <button class="show">Mostrar</button>
-                            <button class="edit">Editar</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="body-card">
-                            <h4 class="question">Pregunta?</h4>
-                            <h5 class="answer">respuesta</h5>
-                        </div>
-                        <div class="footer-card">
-                            <button class="show">Mostrar</button>
-                            <button class="edit">Editar</button>
+                            <button class="delete" data-type="delete"><h2>Borrar</h2></button>
+                            <button class="show" data-type="show"><h2>Mostrar</h2></button>
+                            <button class="edit" data-type="edit"><h2>Editar</h2></button>
                         </div>
                     </div>
 
