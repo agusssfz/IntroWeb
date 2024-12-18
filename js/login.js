@@ -21,8 +21,8 @@ form.addEventListener('submit', (event) => {
     }
 
     
-    if (passwordInput.value.trim().length < 6) {
-        showPlaceholderError(passwordInput, 'Min. 6 caracteres');
+    if (passwordInput.value.trim().length < 6 || passwordInput.value.trim().length > 50) {
+        showPlaceholderError(passwordInput, 'La contraseña debe tener entre 6 y 50 caracteres');
         isValid = false;
     }
 
