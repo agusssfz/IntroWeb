@@ -21,19 +21,22 @@
     <main>
 
             <div class="container">
+                <div id="backCrearCard" class="hide"></div>
                 <section class="title-controls">
-                    <h1>Bienvenidos al Creador</h1>
+                    <h1>Flash Cards</h1>
                     <button id="btn-crear"><h2>Crear</h2></button>
 
+                
                     <div id="crearCard" class="crear-card hide">
+                        
                         <h2>Creacion de Flash Card</h2>
 
                         <form id="form-card">
                             <label for="fquestion">Pregunta</label>
-                            <input type="text" id="fquestion" name="fquestion" placeholder=""><br><br>
+                            <textarea name="fquestion" id="fquestion" placeholder=""></textarea><br><br>
                             <label for="fanswer">Respuesta</label>
-                            <input type="text" id="fanswer" name="fanswer" placeholder=""><br><br>
-                            <input type="submit" >
+                            <textarea name="fanswer" id="fanswer" placeholder=""></textarea><br><br>
+                            <button type="submit">Guardar</button>
                         </form>
 
                     </div>
