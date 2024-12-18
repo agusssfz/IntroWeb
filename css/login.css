@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+
+    --mainBackGround: #00A8A5;
+    --mainPrimario1: #008080;
+    --mainPrimario2: #003235;
+    --mainSecundario: #0E5351;
+    --mainColorLogo: #C5FFFA;
+    --mainCards: #FFFFFF;
+
+}
+
+*{font-family: 'Roboto', sans-serif;}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #008080, #003235);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background:var(--mainBackGround);
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 3px  15px var(--mainColorLogo);
+}
+
+
+form .title {
+    color: var(--mainPrimario2);
+    font-family: inherit;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+form label {
+    margin-bottom: 35px;
+}
+
+form label .fa-solid {
+    font-size: 20px;
+    color: var(--mainPrimario2);
+    margin-right: 10px;
+    
+}
+
+form label input {
+    outline: none;
+    border: none;
+    color: #003235;
+    border-bottom: solid 2px var(--mainPrimario2);
+    padding: 0 5px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+form label input::placeholder {
+    color: #0e5351;
+}
+
+
+form .link {
+    color: #003235;
+    margin-bottom: 15px;
+}
+
+form button {
+    color: #fff;
+    border: none;
+    background: #008080;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+form button:hover
+{
+    color: #C5FFFA;
+    background-color: #003235;
+}

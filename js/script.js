@@ -42,7 +42,7 @@ form.addEventListener(`submit`, (e) => {
 let isCrear = true;
 btnCrear.addEventListener('click', () => {
     if (isCrear) {
-        btnCrear.innerHTML = `<h2 style="color: red;">Cancelar</h2>`;
+        btnCrear.innerHTML = `<h2>Cancelar</h2>`;
         isCrear = false;
 
     } else {
