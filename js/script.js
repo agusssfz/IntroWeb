@@ -17,15 +17,15 @@ let id = 1;
 form.addEventListener(`submit`, (e) => {
     e.preventDefault();
 
-    if (question.value === "") {
-    question.setAttribute(`placeholder`, `Rellena la pregunta boludo`);
+   if (question.value === "") {
+    question.setAttribute(`placeholder`, `Rellenar la pregunta`);
     setTimeout(() => {
-        question.removeAttribute(`placeholder`, `Rellena la pregunta boludo`);
+        question.removeAttribute(`placeholder`, `Rellenar la pregunta`);
     }, 3000);
     } else if (answer.value === "") {
-    answer.setAttribute(`placeholder`, `Rellena la respuesta boludo`);
+    answer.setAttribute(`placeholder`, `Rellenar la respuesta`);
     setTimeout(() => {
-        answer.removeAttribute(`placeholder`, `Rellena la respuesta boludo`);
+        answer.removeAttribute(`placeholder`, `Rellenar la respuesta`);
     }, 3000);
 
     } else {
